@@ -10,13 +10,12 @@ const server = express();
 server.use(express.json());
 server.use(express.static("assets"));
 server.use(rotausuarios);
-
 server.use(rotaregistros);
 server.use(rotaplaylists);
 server.use(rotaTabelamusical);
 
 server.get("/", (req, res) => {
-  res.sendFile(join(__dirname, "pages", "inicial.html"));
+  res.sendFile(join(__dirname, "pages", "cadastro.html"));
 });
 
 server.get("/idade", (req, res) => {
@@ -77,6 +76,12 @@ server.get("/config", (req, res) => {
 
 server.get("/alterarsenha", (req, res) => {
   res.sendFile(join(__dirname, "pages", "aleterarsenha.html"));
+});
+server.get("/inicial", (req, res) => {
+  res.sendFile(join(__dirname, "pages", "inicial.html"));
+});
+server.get("/inicialtriste", (req, res) => {
+  res.sendFile(join(__dirname, "pages", "inicialtriste.html"));
 });
 
 server.listen(3001, () => console.log("> rodando"));
