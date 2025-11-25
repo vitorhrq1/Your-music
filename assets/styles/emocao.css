@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  height: 100vh;        
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  background: #FEFFED;
+  font-family: Arial, sans-serif;
+}
+
+.emocao {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FEFFED;
+    padding: 20px; 
+}
+
+.logo {
+    width: 200px;
+}
+
+.usuario-logo {
+    width: 200px;
+}
+
+
+.emocao-imagens {
+    display: flex;
+    justify-content: space-between;
+    width: 966px;
+}
+
+.titulo {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    width: 966px;
+}
+
+.titulo h1 {
+    font-size: 100px;
+    color: black ; 
+    text-shadow: 2px 2px 4px #999; 
+}
+
+.titulo p {
+    font-size: 50px;
+    color: black;
+    text-shadow: 1px 1px 3px #999; 
+}
+
+.botoes {
+  display: flex;       
+  justify-content: center; 
+  gap: 20px;          
+  margin-top: 50px;    
+}
+
+.botao1, .botao2 {
+  width: 450px;
+  height: 1060px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botao1 button,
+.botao2 button {
+  width: 400px;         
+  height: 400px;
+  font-size: 30px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  margin: 10px auto; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center; 
+  text-align: center;
+  font-weight: bold; 
+}    
+
+#feliz {
+  background-color: #F8EDD7;
+}
+
+.logo_feliz {
+  width: 270px;
+  height: 270px;
+}
+
+#triste {
+  background-color: #97D7FF;
+}
+
+.logo_triste {
+  width: 270px;
+  height: 270px;
+}
+
+#irritado {
+  background-color: #FFAFAF;
+}
+
+.logo_irritado {
+  width: 270px;
+  height: 270px;
+}
+
+#ansioso {
+  background-color: #FFCA94;
+}
+
+.logo_ansioso {
+  width: 270px;
+  height: 270px;
+}
+
+#calmo {
+  background-color: #D5FFE3;
+}
+
+.logo_calmo {
+  width: 270px;
+  height: 270px;
+}
+
+#cansado {
+  background-color: #E8B7FF;
+}
+
+.logo_cansado {
+  width: 270px;
+  height: 270px;
+}
+
+.div_continuar {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  width: 970px;
+}
+
+.continuar {
+  padding: 12px;
+  font-size: 40px;
+  font-weight: bold;
+  background: #486DFF;
+  color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  width: 1000px; 
+  height: 70px;
+}

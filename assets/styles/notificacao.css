@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #FEFFED;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-principal {
+  width: 410px; 
+  height: 900px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FEFFED;
+  overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.icone-sino {
+    width: 35px;
+    height: 35px;
+}
+
+.main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-top: 10px;
+}
+
+.secao {
+    margin-bottom: 20px;
+}
+
+.secao h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.opcao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5dcb1;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 28px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #47A3FF;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.salvar, .restaurar {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.salvar { background: #b8dcf8; }
+.restaurar { background: #dff0da; }
+
+/* --- RODAPÉ PADRÃO --- */
+.app-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FEFFED;
+    border-top: 1px solid black;
+    height: 80px;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.menu-item-padrao {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.menu-item-padrao img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2px;
+}
+
+.menu-item-padrao.ativo {
+    font-weight: bold;
+}

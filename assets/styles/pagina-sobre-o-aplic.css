@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FEFFED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-principal {
+    width: 410px;
+    height: 900px;
+    background-color: #FEFFED;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+header {
+    background-color: #FEFFED;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #000;
+    font-size: 28px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+p {
+    font-size: 18px;
+    color: #111;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* --- RODAPÉ PADRÃO --- */
+.app-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FEFFED;
+    border-top: 1px solid black;
+    height: 80px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.menu-item-padrao {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.menu-item-padrao img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 2px;
+}
+
+.menu-item-padrao.ativo {
+    font-weight: bold;
+}
